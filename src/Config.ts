@@ -2,6 +2,8 @@ import Phaser from "phaser";
 
 import BootScene from "./scenes/BootScene";
 
+import MenuScene from "./scenes/MenuScene";
+
 export const GameConfig: Phaser.Types.Core.GameConfig = {
 
     type: Phaser.AUTO,
