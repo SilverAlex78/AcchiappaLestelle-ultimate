@@ -9,7 +9,7 @@ export default class BootScene extends Phaser.Scene {
     preload(): void {
 
         console.log("====================================");
-        console.log(" ACCHIAPPA LE STELLE ULTIMATE 3.0 ");
+        console.log(" ACCHIAPPA LE STELLE ULTIMATE 2.0 ");
         console.log(" Boot Scene");
         console.log("====================================");
 
