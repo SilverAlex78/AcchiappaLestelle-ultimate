@@ -3,38 +3,28 @@ import Phaser from "phaser";
 export default class BootScene extends Phaser.Scene {
 
     constructor() {
-
         super("BootScene");
-
     }
 
     preload(): void {
 
-        console.log("Boot Scene");
+        console.log("====================================");
+        console.log(" ACCHIAPPA LE STELLE ULTIMATE 3.0 ");
+        console.log(" Boot Scene");
+        console.log("====================================");
 
     }
 
     create(): void {
 
-        this.add.text(
+        // Colore iniziale della telecamera
+        this.cameras.main.setBackgroundColor("#071420");
 
-            640,
+        // Breve dissolvenza
+        this.cameras.main.fadeIn(500, 0, 0, 0);
 
-            360,
-
-            "Acchiappa le Stelle\nUltimate Edition 3.0",
-
-            {
-
-                fontSize: "42px",
-
-                color: "#ffffff",
-
-                align: "center"
-
-            }
-
-        ).setOrigin(0.5);
+        // Passa immediatamente al preload
+        this.scene.start("PreloadScene");
 
     }
 
